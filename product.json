@@ -1,0 +1,87 @@
+
+{
+
+  "products":[
+      {
+        "id":1,
+        "image":"p1.jpg",
+        "type": "Laptops",
+        "price":120500,
+        "name":"HP Notebook",
+        "offer":111000,
+        "available":6,
+        "rating":["fill","fill","fill","fill","fill"]
+      },
+      {
+        "id":2,
+        "image":"p2.jpg",
+        "type": "Laptops",
+        "price":109000,
+        "name":"HP Envy",
+        "offer":102500,
+        "available":7,
+        "rating":["fill","fill","fill","fill","half"]
+      },
+      {
+        "id":3,
+        "image":"p5.jpg",
+        "type": "Gaming Laptops",
+        "price":150000,
+        "name":"Toshiba B77",
+        "offer":140000,
+        "available":5,
+        "rating":["fill","fill","fill","half"]
+      },
+      {
+        "id":4,
+        "image":"p8.jpg",
+        "type": "Laptops",
+        "price":101000,
+        "name":"HP Envy",
+        "offer":100500,
+        "available":7,
+        "rating":["fill","fill","fill","fill","half"]
+      },
+      {
+        "id":5,
+        "image":"p6.jpg",
+        "type": "Gaming Laptops",
+        "price":140000,
+        "name":"Toshiba B77",
+        "offer":130000,
+        "available":6,
+        "rating":["fill","fill","fill","fill"]
+      },
+      {
+        "id":6,
+        "image":"p3.jpg",
+        "type": "Laptops",
+        "price":100500,
+        "name":"Toshiba B77",
+        "offer":100000,
+        "available":7,
+        "rating":["fill","fill","fill","fill","fill"]
+      },
+      {
+        "id":7,
+        "image":"p9.jpg",
+        "type": "Laptops",
+        "price":130000,
+        "name":"Toshiba B77",
+        "offer":125000,
+        "available":5,
+        "rating":["fill","fill","fill","fill","half"]
+      },
+      {
+        "id":8,
+        "image":"p11.jpg",
+        "type": "Laptops",
+        "price":109000,
+        "name":"HP Envy",
+        "offer":102500,
+        "available":7,
+        "rating":["fill","fill","fill","fill","half"]
+      }
+      
+    ]
+}
