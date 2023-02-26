@@ -1,0 +1,573 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+:root{
+    --heading:rgb(0 10 45);
+    --para:#777;      /* tint and shade generator */
+    --para-tint:#e4e4e4;
+    --white:#fff;
+    --black:#212529;
+    --helper:#8490ff;
+    --helper-tint:#f3f4ff;
+    --bg:rgb(249 249 255);
+    --gradient:linear-gradient(0deg,rgb(132 144 255)0%,rgb(98 189 252)100%);
+    --gradientSupport:-webkit-linear-gradient(
+        0deg,
+        rgb(132 144 255)0%,
+        rgb(98 189 252)100%
+    );
+    --shadpw:0px 0px 20px 0px rgb(132 144 255 / 20%);
+    --shadowSupport:0px 20px 20px 0px rgb(132 144 255 / 30%);
+    --shadowCard:rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+    
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    color: var(--heading);
+    /*font-size: 6rem;*/
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+h3{
+    /*font-size: 1.8rem;*/
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+p{
+    color: var(--para);
+    line-height:1.6;
+    /*font-size: 1.7rem;*/
+    font-size: 2rem;
+}
+
+a{
+    color: #4154f1;
+    text-decoretion:none;
+}
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+li{
+    list-style:none;
+}
+
+body {
+  background: #f6f9ff;
+  color: #444444;
+}
+
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#main {
+  margin-top: 60px;
+  padding: 20px 30px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+  #main {
+    padding: 20px;
+  }
+}
+
+/* ===================================
+    reusable code section
+================================== */
+/*.section{
+    padding: 9rem 0;
+}*/
+
+.container{
+    max-width:140rem;
+    margin: 0 auto;
+}
+
+.grid{
+    display:grid;
+    gap:9rem;
+}
+
+.grid-two-column{
+    grid-template-columns:repeat(2,1fr); 
+   /*  grid-template-columns:1fr,1fr; */
+}
+
+.btn{
+    background: var(--gradientSupport);
+    padding: 1rem 2rem;*/*padding: 1.6rem 3.2rem;*/
+    border:none;
+    color: var(--helper-tint);
+    display: inline-block;
+    text-transform:uppercase;
+    font-size:1.5rem;      /*font-size:1.8rem;*/
+    font-weight:500 ;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+.btn:hover , .btn:active{
+   /*box-shadow:0 2rem 2rem 0 rgb(132 144 255 / 30%); */
+    box-shadow:var(--shadowSupport);
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Override some default Bootstrap stylings
+--------------------------------------------------------------*/
+/* Dropdown menus */
+
+
+/* contact us page */
+.addrListBox{
+  margin-bottom: 30px;
+  border: none;
+  box-shadow:rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 10px 15px;
+
+  }
+.cen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dvTrackBody{
+  display: none;
+}
+/* .dv1,.dv2,.dv3,.dv4,.dv5{
+  display: none;
+} */
+.responsive {
+  width: 100%;
+  
+}
+.contact-banner{
+  position: relative;
+}
+.contact-banner-text {
+  position: absolute;
+  font-size: 6vw;
+  padding: 4% 10%;
+  color: black;
+ 
+}
+
+  .inquiry-banner{
+  position: relative;
+}
+.inquiry-banner-text {
+  position: absolute;
+  font-size: 6vw;
+  /*padding: 10px 10px;*/
+  color: black;
+ 
+  padding: 5% 30% 4% 3%;
+  /* clip-path: polygon(0 0,100% 0%,100% 75%,50% 100%,0% 75%); */
+}
+
+/* Card */
+
+.card {
+  /*margin-bottom: 30px;
+  border: none;*/
+  border-radius: 10px;
+  /*box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);*/
+  box-shadow:var(--shadowSupport);
+}
+.card:hover{
+box-shadow: var(--shadowCard);
+}
+/* Alerts */
+.alert-heading {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+/* Close Button */
+.btn-close {
+  background-size: 25%;
+}
+
+.btn-close:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.logo {
+  line-height: 1;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 280px;
+  }
+}
+
+.logo img {
+  max-height: 26px;
+  margin-left: 3rem;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+  margin-left: 15px;
+}
+
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  height: 60px;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  background-color: #fff;
+  padding-left: 20px;
+  /* Toggle Sidebar Button */
+  
+}
+
+.header .toggle-sidebar-btn {
+  font-size: 32px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: #012970;
+}
+
+
+/*--------------------------------------------------------------
+# Header Nav
+--------------------------------------------------------------*/
+
+.header-nav ul {
+  list-style: none;
+}
+
+.header-nav>ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav .nav-icon {
+  font-size: 22px;
+  color: #012970;
+  margin-right: 25px;
+  position: relative;
+}
+
+.header-nav .nav-profile {
+  color: #012970;
+}
+
+.header-nav .nav-profile img {
+  max-height: 36px;
+}
+
+.header-nav .nav-profile span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+.header-nav .profile {
+  min-width: 240px;
+  padding-bottom: 0;
+  top: 8px !important;
+}
+
+.header-nav .profile .dropdown-header h6 {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #444444;
+}
+
+.header-nav .profile .dropdown-header span {
+  font-size: 14px;
+}
+
+.header-nav .profile .dropdown-item {
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.header-nav .profile .dropdown-item i {
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 0;
+}
+
+.header-nav .profile .dropdown-item:hover {
+  background-color: #f6f9ff;
+}
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 996;   /*z-index: 1;*/
+  transition: all 0.3s;
+  padding: 20px;
+/*  overflow-y: auto;*/
+  /*scrollbar-width: thin;
+  scrollbar-color: #aab7cf transparent;*/
+  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+  background-color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .sidebar {
+    left: -300px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  #main,
+  #footer {
+    margin-left: 300px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .toggle-sidebar .sidebar {
+    left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .toggle-sidebar #main,
+  .toggle-sidebar #footer {
+    margin-left: 0;
+  }
+
+  .toggle-sidebar .sidebar {
+    left: -300px;
+  }
+}
+
+.sidebar-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar-nav .nav-item {
+  margin-bottom: 5px;
+}
+
+.sidebar-nav .nav-heading {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #899bbd;
+  font-weight: 600;
+  margin: 10px 0 5px 15px;
+}
+
+.sidebar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #4154f1;
+  transition: 0.3;
+  background: #f6f9ff;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.sidebar-nav .nav-link i {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #4154f1;
+}
+
+.sidebar-nav .nav-link.collapsed {
+  color: #012970;
+  background: #fff;
+}
+
+.sidebar-nav .nav-link.collapsed i {
+  color: #899bbd;
+}
+
+.sidebar-nav .nav-link:hover {
+  color: #4154f1;
+  background: #f6f9ff;
+}
+
+.sidebar-nav .nav-link:hover i {
+  color: #4154f1;
+}
+
+.sidebar-nav .nav-link .bi-chevron-down {
+  margin-right: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+.sidebar-nav .nav-content {
+  padding: 5px 0 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar-nav .nav-content a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #012970;
+  transition: 0.3;
+  padding: 10px 0 10px 40px;
+  transition: 0.3s;
+}
+
+.sidebar-nav .nav-content a i {
+  font-size: 6px;
+  margin-right: 8px;
+  line-height: 0;
+  border-radius: 50%;
+}
+
+.sidebar-nav .nav-content a:hover,
+.sidebar-nav .nav-content a.active {
+  color: #4154f1;
+}
+
+.sidebar-nav .nav-content a.active i {
+  background-color: #4154f1;
+}
+
+
+
+/*--------------------------------------------------------------
+# Profie Page
+--------------------------------------------------------------*/
+.profile .profile-card img {
+  max-width: 120px;
+}
+
+.profile .profile-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c384e;
+  margin: 10px 0 0 0;
+}
+
+.profile .profile-card h3 {
+  font-size: 18px;
+}
+
+.profile .profile-card .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: rgba(1, 41, 112, 0.5);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.profile .profile-card .social-links a:hover {
+  color: #012970;
+}
+
+.profile .profile-overview .row {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.profile .profile-overview .card-title {
+  color: #012970;
+}
+
+.profile .profile-overview .label {
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+.profile .profile-edit label {
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+.profile .profile-edit img {
+  max-width: 120px;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  padding: 20px 0;
+  font-size: 14px;
+  transition: all 0.3s;
+  border-top: 1px solid #cddfff;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: #012970;
+}
+
+.footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #012970;
+}
