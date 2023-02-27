@@ -20,19 +20,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link    rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
   
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
- <style>
-    .bi{
-      font-size: 3rem;
-    }
-    
-  </style>
 
+<style>
+
+</style>
 </head>
 
 <body>
+    
+    
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -45,13 +45,14 @@
       </a>
     </div><!-- End Logo -->
  
+     
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
         <li class="nav-item d-block">
-          <a class="nav-link nav-icon cart-bar-toggle " href="#">
+          <a class="nav-link nav-icon cart-bar-toggle mt-2" href="#">
             <ion-icon name="cart" style="font-size:4rem;"></ion-icon>
-            <span class="badge bg-success badge-number">3</span>
+<!--            <span class="badge bg-success badge-number">3</span>-->
           </a>
         </li><!-- End cart Icon-->
         
@@ -62,7 +63,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <img src="assets/img/user.png" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -128,22 +129,21 @@
       <li class="nav-item">
         <a class="nav-link " href="index.html">
           <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
+          <span>Home</span>
         </a>
-      </li><!-- End Dashboard Nav -->
+      </li><!-- End hone Nav -->
       
-            <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-person"></i>
-          <span>Profile</span>
-        </a>
-      </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i><span>products</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+           <li>
+            <a href="product.html">
+              <i class="bi bi-circle"></i><span>All</span>
+            </a>
+          </li>
           <li>
             <a href="laptop.html">
               <i class="bi bi-circle"></i><span>Laptop</span>
@@ -165,11 +165,6 @@
             </a>
           </li>
           <li>
-            <a href="xps.html">
-              <i class="bi bi-circle"></i><span>XPS</span>
-            </a>
-          </li>
-          <li>
             <a href="ultrabook.html">
               <i class="bi bi-circle"></i><span>Ultrabook</span>
             </a>
@@ -177,6 +172,20 @@
         </ul>
       </li><!-- End products Nav -->
      
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="about-us.html">
+          <i class="bi bi-envelope"></i>
+          <span>About Us</span>
+        </a>
+      </li><!-- End about us Page Nav -->
+     
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+         
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-faq.html">
@@ -185,12 +194,13 @@
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
-          <i class="bi bi-envelope"></i>
-          <span>Contact</span>
+      
+            <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
         </a>
-      </li><!-- End Contact Page Nav -->
+      </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-register.html">
@@ -215,45 +225,58 @@
   </aside><!-- End Sidebar-->
 
   <main style="margin-top:60px">
-       <div class="container-fluid p-0 m-0 about-banner">
-    <img src="assets/img/about1.jpg" class="responsive">
-
+         
+  <div class="container-fluid p-0 m-0 inquiry-banner">
+    <h2 class="inquiry-banner-text text-center"> Got a Question ? Look No Further Call Us.</h2>
+    <img src="assets/img/inquiry2.jpg" class="responsive">
   </div>
-<div class="container mt-5">
-  
-</div>
-
-
-
+  <div class="text-center mb-5 mt-5">
+   <h2>Inquiry form</h2>
+   <p>Talk to Us now !<br>It's all about your queries.</p>
    
    
-   
-        <div class="col-xl-4 mt-2 mb-5 cen">
 
-          <div class="card pt-4">
-            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center pb-4">
 
-              <img src="assets/img/g.jpg" alt="Profile" class="rounded-circle mb-5 mb-md-6" height="50%" width="50%">
-              <h4 class="mb-3 mb-md-4">Archana Ghaskata</h4>
-              <h3 class="mb-3 mb-md-4">Web Designer</h3>
-              <h4 class="text-muted mb-4 mb-md-5">owner of swift Company</h4>
-              <div class="social-links mt-4">
-                <a href="#" class="twitter"><i class="bi bi-twitter pr-3 pr-md-5"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook pr-3 pr-md-5"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram pr-3 pr-md-5"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin pr-3"></i></a>
-              </div>
+            <!-- Delivery Options Start -->
+            <div id="BottomdelivaryOption" class="container-fluid back-white delivaryOption clsdelivaryop_posrel mt-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
+                        <div class="text-center">
+                            <img src="assets/img/contact/USP-Free-Shipping.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Shipping Image" />
+                        </div>
+                        <div class="padding-bottom10 text-uppercase text-center text-bold">Free Shipping</div>
+                        <div class="delivary-para text-center">Available on all our products</div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
+                        <div class="text-center">
+                            <img src="assets/img/contact/safe-delivery.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Door step safe delivery" />
+                        </div>
+                        <div class="padding-bottom10 text-uppercase text-center text-bold">Safe Delivery</div>
+                        <div class="delivary-para text-center">Safe delivery at your doorstep</div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
+                        <div class="text-center">
+                            <img src="assets/img/contact/USP-COD.png" width="120" height="80" class="img-responsive current-location-grid lazy" />
+                        </div>
+                        <div class="padding-bottom10 text-uppercase text-center text-bold">Easy Installment</div>
+                        <div class="delivary-para text-center">Pay for your purchase in easy EMIs</div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-top padding-top15 padding-bottom25 border-bottom">
+                        <div class="text-center">
+                            <img src="assets/img/contact/USP-Enquiry.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Enquiry" />
+                        </div>
+                        <div class="padding-bottom10 text-uppercase text-center text-bold">Enquiry</div>
+                        <div class="delivary-para text-center">Got a question? Look no further Call Us.</div>
+                    </div>
+                </div>
             </div>
-          </div>
+     
 
-        </div>
 
-    
-    
+  </main>
 
-  </main><!-- End #main -->
-
-   <!-- ======= Footer ======= -->
+  
+ <!-- ======= Footer ======= -->
   
   <footer id="footer" class="footer">
     <div class="copyright">
@@ -265,7 +288,18 @@
     </div>
   </footer><!-- End Footer -->
 
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  
+
+    <script>
+
+    </script>
+  
+  
+  
+  
       
       <!----------script link--------->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -276,6 +310,8 @@
        <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
   <!-- Template Main JS File -->

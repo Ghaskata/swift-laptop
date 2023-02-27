@@ -55,7 +55,7 @@ font-size:1.5rem;
               <div class="card mb-3">
                   
                   
-                  <div class="d-flex justify-content-center py-4 mb-2 mt-2 mt-md-5">
+                  <div class="d-flex justify-content-center py-4 mt-2 mt-md-5">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
                   <span class="d-none d-md-block d-lg-block mr-2">Swift</span>
@@ -64,15 +64,15 @@ font-size:1.5rem;
 
                 <div class="card-body">
 
-                  <div class="pt-2 pb-2 mb-3">
-                    <h4 class="card-title text-center pb-0 fs-4">Create an Account</h4>
+                  <div class="pb-2 mb-3">
+                    <h3 class="card-title text-center pb-0 fs-4">Create an Account</h3>
                     <p class="text-center small">Enter your personal details to create account</p>
                   </div>
 
                   <form class="row g-3 needs-validation">
                     <div class="col-12 mb-3">
                       <label for="yourName" class="form-label visually-hidden">Your Name</label>
-                      <div class="input-group has-validation">
+                      <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><ion-icon name="person"></ion-icon></span>
                         <input type="text" name="name" class="form-control" id="name"placeholder="xyz" >
                         
@@ -81,7 +81,7 @@ font-size:1.5rem;
 
                     <div class="col-12 mb-3">
                       <label for="yourEmail" class="form-label visually-hidden">Your Email</label>
-                      <div class="input-group has-validation">
+                      <div class="input-group ">
                         <span class="input-group-text" id="inputGroupPrepend"><ion-icon name="mail"></ion-icon></span>
                         <input type="email" name="email" class="form-control" id="email" placeholder="xyz@gmail.com">
                         
@@ -90,7 +90,7 @@ font-size:1.5rem;
 
                     <div class="col-12 mb-3">
                       <label for="yourUsername" class="form-label visually-hidden">Username</label>
-                      <div class="input-group has-validation">
+                      <div class="input-group ">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
                         <input type="text" name="username" class="form-control" id="uname" placeholder="abc">
                         
@@ -98,7 +98,7 @@ font-size:1.5rem;
                     </div>
                     <div class="col-12 mb-3">
                       <label for="phone" class="form-label visually-hidden">Phone no</label>
-                      <div class="input-group has-validation">
+                      <div class="input-group ">
                         <span class="input-group-text bi bi-phone" id="inputGroupPrepend"></span>
                         <input type="text" name="phone" class="form-control" id="phone" placeholder="+91 99568 73498" >
                         
@@ -136,7 +136,7 @@ font-size:1.5rem;
 
                     <div class="col-12 mb-3">
                       <label for="yourPassword" class="form-label visually-hidden">Password</label>
-                      <div class="input-group has-validation">
+                      <div class="input-group ">
                         <span class="input-group-text" id="inputGroupPrepend"><ion-icon name="key"></ion-icon></span>
                         <input type="password" name="password" class="form-control" placeholder="enter your Password" id="password">
                         
@@ -179,62 +179,75 @@ font-size:1.5rem;
 
 </body>
 <script>
-    $(document).ready(function() {
-        load_json_data('country');
-
- function load_json_data(id, parent_id)
- {
-   console.log(id);
-  var html_code = '';
-  $.getJSON('country_state_city.json', function(data){
-
-   html_code += '<option value="">Select '+id+'</option>';
-   $.each(data, function(key, value){
-    if(id == 'country')
-    {
-     if(value.parent_id == '0')
-     {
-      html_code += '<option value="'+value.id+'">'+value.name+'</option>';
-     }
+$(document).ready(function(){
+  
+  const xmlhttp = new XMLHttpRequest();
+         
+  xmlhttp.onload = function() {
+     console.log(this.responseText);
+    var myObj = JSON.parse(this.responseText);
+    console.log(myObj);
+    var c1=myObj.countries;
+    /*console.log(c1[1].country);*/
+    
+    var html_code = '';
+    html_code += '<option value="">Select country </option>';
+    
+    for(i=0;i<c1.length;i++){
+        html_code += '<option value="'+i+'">'+c1[i]. country+'</option>';
     }
-    else
-    {
-     if(value.parent_id == parent_id)
-     {
-      html_code += '<option value="'+value.id+'">'+value.name+'</option>';
-     }
+    $('#country').html(html_code);
+  }
+  
+  /*state update*/
+  
+$('#country').on('change', function(){
+    
+    var country_id= $(this).val();
+    console.log("selected country_id:"+country_id);
+    
+    
+    
+    var myObj = JSON.parse(xmlhttp.responseText);
+    
+    var s1=myObj.countries[country_id].states;
+    /*console.log(s1);*/
+    var html_code = '';
+    html_code += '<option value="">Select State </option>';
+    for(i=0;i<s1.length;i++){
+        html_code += '<option value="'+i+'">'+s1[i].state+'</option>';
     }
-   });
-   $('#'+id).html(html_code);
-  });
+    
+    $('#state').html(html_code);
+});
 
- }
 
- $(document).on('change', '#country', function(){
-  var country_id = $(this).val();
-  if(country_id != '')
-  {
-   load_json_data('state', country_id);
-  }
-  else
-  {
-   $('#state').html('<option value="">Select state</option>');
-   $('#city').html('<option value="">Select city</option>');
-  }
- });
- $(document).on('change', '#state', function(){
-  var state_id = $(this).val();
-  if(state_id != '')
-  {
-   load_json_data('city', state_id);
-  }
-  else
-  {
-   $('#city').html('<option value="">Select city</option>');
-  }
- });
- 
-    });
+/*city update*/
+$('#state').on('change', function(){
+    var country_id=$("#country").val();
+    var state_id= $(this).val();
+    console.log("selected state_id:"+state_id);
+    
+    
+    var myObj = JSON.parse(xmlhttp.responseText);
+    
+    var c1=myObj.countries[country_id].states[state_id].cities;
+    console.log(c1);
+    var html_code = '';
+    html_code += '<option value="">Select City </option>';
+    for(i=0;i<c1.length;i++){
+        html_code += '<option value="'+i+'">'+c1[i]+'</option>';
+    }
+    
+    $('#city').html(html_code);
+});
+  
+  
+  
+  
+ xmlhttp.open("GET","country_state_city.json",true) 
+ xmlhttp.send();
+});
     
 </script>
 

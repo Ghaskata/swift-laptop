@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cards>
+    <card>
+        <title>5 Series Laptops</title>
+        <description>The intersection of power & a great price. Built with vivid displays, extreme processors & cutting-edge GPUs.</description>
+    </card>
+    <card>
+        <title>7 Series Laptops</title>
+        <description>Our premier gaming laptop lineup boasting beastly power, slick, durable chassis & more premium options.</description>
+    </card>
+    <card>
+        <title>Pro Series Laptops</title>
+        <description>Experience top-tier power with our flagship lineup of laptops boasting NVIDIA® GeForce RTX™ 40 Series GPUs.</description>
+    </card>
+</cards>

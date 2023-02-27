@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Swift laptop shop</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  
+  <!--bootstap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link    rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<style>
+ 
+</style>
+
+</head>
+
+<body>
+    
+    
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+   <div class="d-flex align-items-center justify-content-between">
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Swift</span>
+      </a>
+    </div><!-- End Logo -->
+ 
+     
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item d-block">
+          <a class="nav-link nav-icon cart-bar-toggle mt-2" href="#">
+            <ion-icon name="cart" style="font-size:4rem;"></ion-icon>
+<!--            <span class="badge bg-success badge-number">3</span>-->
+          </a>
+        </li><!-- End cart Icon-->
+        
+
+        
+        
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/user.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Home</span>
+        </a>
+      </li><!-- End hone Nav -->
+      
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>products</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+           <li>
+            <a href="product.html">
+              <i class="bi bi-circle"></i><span>All</span>
+            </a>
+          </li>
+          <li>
+            <a href="laptop.html">
+              <i class="bi bi-circle"></i><span>Laptop</span>
+            </a>
+          </li>
+          <li>
+            <a href="computer.html">
+              <i class="bi bi-circle"></i><span>Computer</span>
+            </a>
+          </li>
+          <li>
+            <a href="macbook.html">
+              <i class="bi bi-circle"></i><span>MacBook</span>
+            </a>
+          </li>
+          <li>
+            <a href="ipad.html">
+              <i class="bi bi-circle"></i><span>iPad</span>
+            </a>
+          </li>
+          <li>
+            <a href="ultrabook.html">
+              <i class="bi bi-circle"></i><span>Ultrabook</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End products Nav -->
+     
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="about-us.html">
+          <i class="bi bi-envelope"></i>
+          <span>About Us</span>
+        </a>
+      </li><!-- End about us Page Nav -->
+     
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+         
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-faq.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      
+            <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-register.html">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+    </ul>
+    home
+    about
+    contact us
+    products
+    services
+
+  </aside><!-- End Sidebar-->
+
+  <main style="margin-top:60px">
+  
+       <div class="container-fluid p-0 m-0 contact-banner">
+         <h2 class="contact-banner-text text-center"> Get in touch with Us</h2>
+    <img src="assets/img/contact/bcon2.jpg" class="responsive">
+
+  </div>
+<div class="container mt-5">
+
+        <div class="dvCustomerCare" id="customerCare">
+            <div class="container">
+                <div class="dvCustCareHead text-center">
+                    <img src="assets/img/contact/CUSTOMER-CARE.png" alt="CustCare" />
+                    <h4 class="pb-3 pt-2">Customer care</h4>
+                    
+                    <p>Customer Care Desk at all Outlets</p>
+                </div>
+                <div class="dvCustCareBody">
+                    <div class="dvCustCareList">
+                        <div class="row cen">
+                            <div class="col col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">Mumbai</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                            <span>swiftcaremumbai@swift.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">022 6622 7722</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">Pune</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                            <span>swiftcarepune@swift.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#" >020 6720 1717</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">Ahmedabad</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                            <span>swiftcareahmedabad@swift.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">079 6604 3333</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">Surat</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                            <span>swiftcaresurat@swift.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">0261 671 2222</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">VADODARA</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                            <span>swiftcarevadodara@swift.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">026 5619 0000
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">Delhi</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                            <span>swiftcaredelhi@swift.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">011 4226 2288</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="dvOfficeAddress" id="officeAddr">
+
+            <div class="container">
+
+                <div class="dvOffAddrHead text-center dvhead">
+                    <img src="assets/img/contact/Corporate-queries.png" alt="OffAddr" />
+                    <h4 class="pb-3 pt-2">Address</h4>
+                    
+                </div>
+                <div class="dvTrackBody dv1">
+                    <div class="dvOffAddrList">
+                        <div class="row cen">
+                            <div class="col-md-6">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">Administrative Office</span>
+                                    <div class="row">
+                                        <div class="col-3">Address:</div>
+                                        <div class="col-9">
+                                            <span>Swift Company, CTS No. 220/ 16 - 17, Patel Estate Road, Near Telephone Exchange & 24 Karat, Opposite Patel Industry, Jogeshwari - (West), Mumbai - 400102</span>
+                                            <br />
+                                            <span>Mon To Saturday (10:30 AM to 7:30 PM)</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">022 2676 6100
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                            <span>swiftcaremumbai@swift.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+       
+         <div class="dvCorpQueries" id="OnlineQuery">
+            <div class="container">
+                <div class="dvTrackHead text-center dvhead">
+                   <img src="assets/img/contact/online-queries.png" alt="OffAddr" />
+                   <h4 class="pb-3 pt-2">Online Queries</h4>
+                    
+
+                </div>
+                <div class="dvTrackBody dv2">
+                    <div class="dvOffAddrList">
+                        <div class="row cen">
+                            <div class="col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">For Online Booking</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                               <span>onlinesupport@swift.com</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">+91 7303434043
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+         <div class="dvCorpQueries" id="corpQuery">
+            <div class="container">
+                <div class="dvTrackHead text-center dvhead">
+                   <img src="assets/img/contact/Corporate-queries.png" alt="OffAddr" />
+                   <h4 class="pb-3 pt-2">Corporate Queries</h4>
+                    
+                </div>
+                <div class="dvTrackBody dv3">
+                    <div class="dvOffAddrList">
+                        <div class="row cen">
+                            <div class="col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">Corporate Sales</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                             <span>corporate@swift.com</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">022 2676 6100                                                                                      
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dvCorpQueries" id="HResource">
+            <div class="container">
+                <div class="dvTrackHead text-center dvhead">
+                    <img src="assets/img/contact/hr.png" alt="Track" />
+                    <h4 class="pb-3 pt-2">HUMAN RESOURCES Details</h4>
+                    
+
+                </div>
+                <div class="dvTrackBody dv4">
+                    <div class="dvOffAddrList">
+                        <div class="row cen">
+                            <div class="col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">Human Resources</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                            <span>hr@swift.com</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">022 2676 6100
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dvTrack" id="TrackLoc">
+            <div class="container">
+                <div class="ddvTrackHead text-center dvhead">
+                    <img src="assets/img/contact/VSPlus.png" alt="Track" />
+                    <h4 class="pb-3 ">Track & Request Complaints For Extended Warranty</h4>
+                    
+                </div>
+                <div class="dvTrackBody dv5">
+                    <div class="dvOffAddrList">
+                        <div class="row cen">
+                            <div class="col-md-5">
+                                <div class="addrListBox">
+                                    <span class="SpnStoreLocation text-danger">Support</span>
+                                    <div class="row">
+                                        <div class="col-3">Email ID:</div>
+                                        <div class="col-9">
+                                            <span >help@onsite.co.in</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">Phone:</div>
+                                        <div class="col-9">
+                                            <a href="#">1800 220 506
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dvBtnFields">
+                                        <a class="btnRedDark" href="#" rel="nofollow" target="_blank" data-ripple>Repair Device</a>
+                                        <a class="btnRedDark m-l-25" href="#" rel="nofollow" target="_blank" data-ripple>Track Status</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Delivery Options Start -->
+            <div id="BottomdelivaryOption" class="container-fluid back-white delivaryOption clsdelivaryop_posrel mt-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
+                        <div class="text-center">
+                            <img src="assets/img/contact/USP-Free-Shipping.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Shipping Image" />
+                        </div>
+                        <div class="padding-bottom10 text-uppercase text-center text-bold">Free Shipping</div>
+                        <div class="delivary-para text-center">Available on all our products</div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
+                        <div class="text-center">
+                            <img src="assets/img/contact/safe-delivery.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Door step safe delivery" />
+                        </div>
+                        <div class="padding-bottom10 text-uppercase text-center text-bold">Safe Delivery</div>
+                        <div class="delivary-para text-center">Safe delivery at your doorstep</div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
+                        <div class="text-center">
+                            <img src="assets/img/contact/USP-COD.png" width="120" height="80" class="img-responsive current-location-grid lazy" />
+                        </div>
+                        <div class="padding-bottom10 text-uppercase text-center text-bold">Easy Installment</div>
+                        <div class="delivary-para text-center">Pay for your purchase in easy EMIs</div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-top padding-top15 padding-bottom25 border-bottom">
+                        <div class="text-center">
+                            <img src="assets/img/contact/USP-Enquiry.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Enquiry" />
+                        </div>
+                        <div class="padding-bottom10 text-uppercase text-center text-bold">Enquiry</div>
+                        <div class="delivary-para text-center">Got a question? Look no further Call Us.</div>
+                    </div>
+                </div>
+            </div>
+     
+
+
+  </main>
+
+  
+ <!-- ======= Footer ======= -->
+  
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Swift</span></strong>, All Rights Reserved.
+    </div>
+    <div class="credits">
+
+      Designed by <a href="index.html">Archana Ghaskata</a>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  
+
+    <script>
+
+    </script>
+  
+  
+  
+  
+      
+      <!----------script link--------->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+       
+ 
+       
+       <!-- --------ion icon cdn----------- -->
+       <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <!-- Template Main JS File -->
+
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -11,82 +11,41 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  
-  <!-- Vendor CSS Files -->
+
+
+    <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  
   <!--bootstap link-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link    rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-  
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-<style>
-  .pro-card{
-    width: 320px;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-  }
- 
-  .pro-card-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    
-  }
-  .pro-card-body{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    position: absolute;
-    background: #1f3d4738;
-    backdrop-filter:blur(5px);
-    border-radius: 20px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-  }
- .pro-card:hover .pro-card-body{
-    right: 0;
-    
-  }
-  .pro-card-btn{
-    height: 45px;
-    width: 150px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  h2{
-    font-size: 50px;
-  }
-</style>
-
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <link    rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <style>
+    .bi-star-fill,.bi-star-half{
+      font-size: 1.5rem;
+    }
+  </style>
 </head>
 
 <body>
-    
-    
 
+  
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
    <div class="d-flex align-items-center justify-content-between">
       <i class="bi bi-list toggle-sidebar-btn"></i>
-      <a href="index.html" class="logo d-flex align-items-center ml-md-5">
+      <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block d-md-block">Swift</span>
+        <span class="d-none d-lg-block">Swift</span>
       </a>
     </div><!-- End Logo -->
  
@@ -97,7 +56,7 @@
         <li class="nav-item d-block">
           <a class="nav-link nav-icon cart-bar-toggle mt-2" href="#">
             <ion-icon name="cart" style="font-size:4rem;"></ion-icon>
-<!--            <span class="badge bg-success badge-number">3</span>-->
+          <!--  <span class="badge bg-success badge-number">3</span>-->
           </a>
         </li><!-- End cart Icon-->
         
@@ -107,13 +66,15 @@
 
         <li class="nav-item dropdown pe-3">
 
-          <a class="nav-link nav-profile d-flex align-items-center pe-0 mr-4" href="#" data-bs-toggle="dropdown">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/user.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              Archana Ghaskata
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -188,27 +149,27 @@
             </a>
           </li>
           <li>
-            <a href="product.html">
+            <a href="laptop.html">
               <i class="bi bi-circle"></i><span>Laptop</span>
             </a>
           </li>
           <li>
-            <a href="product.html">
+            <a href="computer.html">
               <i class="bi bi-circle"></i><span>Computer</span>
             </a>
           </li>
           <li>
-            <a href="product.html">
+            <a href="macbook.html">
               <i class="bi bi-circle"></i><span>MacBook</span>
             </a>
           </li>
           <li>
-            <a href="product.html">
+            <a href="ipad.html">
               <i class="bi bi-circle"></i><span>iPad</span>
             </a>
           </li>
           <li>
-            <a href="product.html">
+            <a href="ultrabook.html">
               <i class="bi bi-circle"></i><span>Ultrabook</span>
             </a>
           </li>
@@ -217,7 +178,7 @@
      
      <li class="nav-item">
         <a class="nav-link collapsed" href="about-us.html">
-          <i class="bi bi-people"></i>
+          <i class="bi bi-envelope"></i>
           <span>About Us</span>
         </a>
       </li><!-- End about us Page Nav -->
@@ -233,7 +194,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-faq.html">
           <i class="bi bi-question-circle"></i>
-          <span>Inquiry (F.A.Q.)</span>
+          <span>F.A.Q</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
@@ -259,11 +220,14 @@
         </a>
       </li><!-- End Login Page Nav -->
     </ul>
+    home
+    about
+    contact us
+    products
+    services
+
   </aside><!-- End Sidebar-->
-
-
-<!-- banner slider -->
- <div class="slider mb-3"style="margin-top:20px;">
+<div class="slider product-slider"style="margin-top:20px;">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -278,13 +242,14 @@
     
     
     <div class="item active">
-      <img src="assets/img/banner2.jpg" alt="Chicago" style="width: 100%;">
+      <img src="assets/img/lonovo.jpg" alt="Chicago" style="width: 100%;">
     </div>
+
     <div class="item">
-      <img src="assets/img/b-m2.jpg" alt="New York" style="width: 100%;">
+      <img src="assets/img/lonovo1.jpg" alt="New York" style="width: 100%;">
     </div>
-    <div class="item">
-      <img src="assets/img/banner1.jpg" alt="New York" style="width: 100%;">
+     <div class="item">
+      <img src="assets/img/lonovo2.jpg" alt="New York" style="width: 100%;">
     </div>
   </div>
 
@@ -300,237 +265,45 @@
 </div>
 
 </div>
-
-<!--pro Product-->
-<section class="latest" id="latest">
-  <div class="container mt-2 text-center">
-    <h2 class="latest-heading  mb-4">
-      Pro Series
-    </h2>
-    <h3 class="mb-4">Embrace the future of gaming with new Legion Pro Series laptops</h3>
-    
-    <p id="p1"></p>
-    </div>
-    <div class="container align-items-center mt-5">
-    <div class=" row pro-cards">
-      <div class="col-md-4 pro-card pb-5">
-        <img src="assets/img/mi1.jpg" class="pro-card-img" alt="">
-        <div class="pro-card-body">
-          <h3 class="pro-card-heading mb-5 text-primary">5 Series Laptops</h3>
-          <p class="pro-card-pera text-white mb-4 mt-3">The intersection of power & a great price. Built with vivid displays, extreme processors & cutting-edge GPUs.</p>
-          <center>
-          <button class="btn pro-card-btn mt-3">Buy now</button>
-          </center>
-        </div>
-      </div>
-      <div class="col-md-4 pro-card pb-5">
-        <img src="assets/img/gaming.jpg" class="pro-card-img" alt="">
-        <div class="pro-card-body">
-          <h3 class="pro-card-heading mb-5 text-primary">7 Series Laptops</h3>
-          <p class="pro-card-pera text-white mb-4 mt-3">Our premier gaming laptop lineup boasting beastly power, slick, durable chassis & more premium options.</p>
-          <center>
-          <button class="btn pro-card-btn mt-3">Buy now</button>
-          </center>
-        </div>
-      </div>
-      <div class="col-md-4 pro-card pb-5">
-        <img src="assets/img/mac.jpg" class="pro-card-img" alt="">
-        <div class="pro-card-body">
-          <h3 class="pro-card-heading mb-5 text-primary">Pro Series Laptops</h3>
-          <p class="pro-card-pera text-white mb-4 mt-3">Experience top-tier power with our flagship lineup of laptops boasting NVIDIA® GeForce RTX™ 40 Series GPUs.</p>
-          <center>
-          <button class="btn pro-card-btn mt-3">Buy now</button>
-          </center>
-        </div>
-      </div>
+  <main class="main">
+       <section class="text-center">
+               <h2 class="latest-heading mb-3"> Products</h2>
+  <div class="container py-5">
+    <div class="row">
+      
     </div>
   </div>
 </section>
 
-
-<div class="container text-center mt-5">
-  
-  
-  
-
-  <h2 class="mb-3">
-    Style and savagery pushed to the limit.
-  </h2>
-  
-  <p id="p2"></p>
-  
-</div>
-
-<section class="responsive mt-5 mb-5">
-  <img src="assets/img/lonovo1.jpg" style="width:100%;"/>
-</section>
-
-
-
-  <section class="our-product mt-5">
-    <div class="align-items-center text-center">
-      <h2 class="latest-heading mt-2 mb-3">
-     Our Products
-      </h2>
-      <div class="container py-5">
-        <div class="row product">
-      
-
-        </div>
-        <a type="button" id="view-all" href="#" style="font-size:2rem;" >View All</a>
-      </div>
-    </div>
-  </section>
-  
-  
-  <!-- shopby brand -->
-  <section class="mt-5 mb-5">
-      <h2 class="text-center mb-4">shop by brand</h2>
-     <div class="container py-5">
-      <div class="row cen">
-          <div class="col col-md-4 mb-5 cen">
-                  <img src="assets/img/brand/23.png" alt="">
-          </div>
-          <div class="col col-md-4 mb-5 cen">
-                  <img src="assets/img/brand/3.png" alt="">
-          </div>
-          <div class="col col-md-4 mb-5 cen">
-                  <img src="assets/img/brand/18.png" alt="">
-          </div>
-         <div class="col col-md-4 mb-5 cen">
-                  <img src="assets/img/brand/10.png" alt="">
-          </div>
-          <div class="col col-md-4 mb-5 cen">
-                  <img src="assets/img/brand/5.png" alt="">
-          </div>
-          <div class="col col-md-4 mb-5 cen">
-                  <img src="assets/img/brand/1.png" alt="">
-          </div>
-          <div class="col col-md-4 mb-5 cen">
-                  <img src="assets/img/brand/8.png" alt="">
-          </div>
-         <div class="col col-md-4 mb-5 cen">
-                  <img src="assets/img/brand/7.png" alt="">
-          </div>
-         <div class="col col-md-4 mb-5 cen">
-                  <img src="assets/img/brand/14.png" alt="">
-          </div>
-      </div>
-     </div>
-  </section>
-  
-  
-  
-  
-              <!-- Delivery Options Start -->
-            <div id="BottomdelivaryOption" class="container-fluid back-white delivaryOption clsdelivaryop_posrel mt-5">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
-                        <div class="text-center cen">
-                            <img src="assets/img/contact/USP-Free-Shipping.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Shipping Image" />
-                        </div>
-                        <div class="padding-bottom10 text-uppercase text-center text-bold">Free Shipping</div>
-                        <div class="delivary-para text-center">Available on all our products</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
-                        <div class="text-center cen">
-                            <img src="assets/img/contact/safe-delivery.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Door step safe delivery" />
-                        </div>
-                        <div class="padding-bottom10 text-uppercase text-center text-bold">Safe Delivery</div>
-                        <div class="delivary-para text-center">Safe delivery at your doorstep</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
-                        <div class="text-center cen">
-                            <img src="assets/img/contact/USP-COD.png" width="120" height="80" class="img-responsive current-location-grid lazy" />
-                        </div>
-                        <div class="padding-bottom10 text-uppercase text-center text-bold">Easy Installment</div>
-                        <div class="delivary-para text-center">Pay for your purchase in easy EMIs</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-top padding-top15 padding-bottom25 border-bottom">
-                        <div class="text-center cen">
-                            <img src="assets/img/contact/USP-Enquiry.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Enquiry" />
-                        </div>
-                        <div class="padding-bottom10 text-uppercase text-center text-bold">Enquiry</div>
-                        <div class="delivary-para text-center">Got a question? Look no further Call Us.</div>
-                    </div>
-                </div>
-            </div>
-     
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   
   <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>Swift</span></strong>, All Rights Reserved.
+      &copy; Copyright <strong><span>Swift</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
 
-      Designed by <a href="index.html">Archana Ghaskata</a>
+      Designed by <a href="index.html">Swift Company</a>
     </div>
-    <!-- end banner slider -->
-    
-    <!-- card -->
-    
-    
-    
-  
-    
-    <!-- end product card -->
-    
-    
-    
-
-    
-    
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
-  
-          <!----------script link--------->
+      <!----------script link--------->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script>
+       <script>
         $(document).ready(function(){
+        $(".product-slider").hide();
         
-         product_card(3);
-         
-         $('#view-all').click(function(){
-           product_card(6);
-         });
-  
-      $.ajax({
-        type: 'GET',
-        url: 'home_para.xml',
-        dataType: 'xml',
-        success: dataParse,
-      });
-      function dataParse(xml) {
-      $(xml)
-        .find('home')
-        .each(function () {
-          let para1= $(this).find('para1').text();
-          let para2 = $(this).find('para2').text();
-
-         $('#p1').text(para1).hide().show(1500);
-          $('#p2').append(para2).hide().show(1500);
-          
-        });
-  
-    }
-  
- });
-
-
-function product_card(n){
- const xmlhttp = new XMLHttpRequest();
+         const xmlhttp = new XMLHttpRequest();
          
   xmlhttp.onload = function() {
-   <!--  console.log(this.responseText); -->
+    <!-- console.log(this.responseText); -->
     const myObj = JSON.parse(this.responseText);
     
-    for(i=0;i<n;i++){
-   
+    for(i=0;i<myObj.products.length;i++){
+    
     var product = myObj.products[i];
     var id = product.id;
     var image = product.image;
@@ -548,30 +321,24 @@ function product_card(n){
     
     var display='<div class="col-md-6 col-lg-4 col-xl-4 mb-5 mb-md-5 mb-lg-5">                                                             <div class="card">                                    <!--  -->                                                        <div class="d-flex p-3">                                                           <p class="lead mb-0">Today Combo Offer</p>            </div>                                                                                                                  <!--       card  image       -->                                           <img src="assets/img/'+image+'"  class="card-img-top"/>                              <!--        card body        -->                                             <div class="card-body">                              <!--  -->                                         <div class="d-flex justify-content-between">        <p class="medium"><a href="#!"class="text-muted"> '+type+' </a></p><p class="medium text-danger"><s>  '+price+'   </s></p>                                                </div>                                                               <!--  -->                                                        <div class="d-flex justify-content-between mb-3">        <h3 class="mb-0">  '+name+' </h3>                    <h4 class="text-dark mb-0">  '+offer+'  </h4>                        </div>                                             <!--  -->                                          <div class="d-flex justify-content-between mb-4">    <p class="text-muted mt-2">Available: <span class="fw-bold">   '+available+'  </span></p>                                        <div class="ms-auto text-warning"> '+r+' </div>                                                </div>                                                    <!--  -->                                                <div class="d-flex justify-content-center mb-2">    <div type="button" class="btn btn-buy">Add to Cart</div>                                                </div>                                                 <!--  -->                                           </div>               <!-- card body end -->                                      </div>               <!-- card end  -->                               </div>   ';          <!-- col end -->
     
-               $(".product").append(display);
+               $(".row").append(display);
         
     }
-     $(".card").fadeOut(10).delay(30).fadeIn(500); 
+     $(".card").fadeOut(10).delay(30).fadeIn(1000,function(){$(".product-slider").slideDown(1000);}); 
   }
   
-  
+
   xmlhttp.open("GET", "product.json",true);
   xmlhttp.send();
-  
-}
+        })
     
-       
-      
-    </script>
-       
-      
+   </script>       
+       <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.slim.min.js"></script>-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
        <!-- --------ion icon cdn----------- -->
        <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        
-
-
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- Template Main JS File -->
 

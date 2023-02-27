@@ -1,0 +1,33 @@
+{
+      {
+         "city":"Mumbai";
+         "email":"swiftcaremumbai@swift.com";
+         "phone":022 6622 7722;
+      },
+      {
+         "city":"Pune";
+         "email":"swiftcarepune@swift.com";
+         "phone":020 6720 1717;
+      },
+      {
+         "city":"Ahmedabad";
+         "email":"swiftcareahmedabad@swift.com";
+         "phone":079 6604 3333;
+      },
+      {
+         "city":"Surat";
+         "email":"swiftcaresurat@swift.com";
+         "phone":0261 671 2222;
+      },
+      {
+         "city":"Vadodara";
+         "email":"swiftcarevadodara@swift.com";
+         "phone":026 5619 0000;
+      },
+      {
+         "city":"Delhi";
+         "email":"swiftcaredelhi@swift.com";
+         "phone":011 4226 2288;
+      }
+      
+}
