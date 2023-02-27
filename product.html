@@ -10,12 +10,12 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/favicon.png" rel="icon">
 
 
     <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   
   <!--bootstap link-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,10 +23,10 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+     
    <link    rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
   <style>
     .bi-star-fill,.bi-star-half{
@@ -44,7 +44,7 @@
    <div class="d-flex align-items-center justify-content-between">
       <i class="bi bi-list toggle-sidebar-btn"></i>
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="./assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">Swift</span>
       </a>
     </div><!-- End Logo -->
@@ -67,7 +67,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/user.png" alt="Profile" class="rounded-circle">
+            <img src="./assets/img/user.png" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -227,6 +227,7 @@
     services
 
   </aside><!-- End Sidebar-->
+
 <div class="slider product-slider"style="margin-top:20px;">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -242,14 +243,14 @@
     
     
     <div class="item active">
-      <img src="assets/img/lonovo.jpg" alt="Chicago" style="width: 100%;">
+      <img src="./assets/img/b-1.jpg" alt="Chicago" style="width: 100%;">
     </div>
 
     <div class="item">
-      <img src="assets/img/lonovo1.jpg" alt="New York" style="width: 100%;">
+      <img src="./assets/img/lonovo1.jpg" alt="New York" style="width:100%;">
     </div>
      <div class="item">
-      <img src="assets/img/lonovo2.jpg" alt="New York" style="width: 100%;">
+      <img src="./assets/img/b-m.jpg" alt="New York" style="width:100%;">
     </div>
   </div>
 
@@ -289,13 +290,33 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
       <!----------script link--------->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
        <script>
         $(document).ready(function(){
-        $(".product-slider").hide();
+            
+            $(".product-slider").slideUp();
+           $("main").find ("*").hide();
+            
+            
+            $("body").before('<center id="center"><h5 class="text-center" id="loading" style="margin-top:40vh;margin-bottom:40vh;">please wait...</h5></center>');
+    
+            $("#loading").show(100).delay(2000).hide(300).delay(100,function(){
+              
+              $("#center").remove();
+               $("main").find ("*").show();
+              
+             
+              display_product();
+            });
+            
+          
+        })
         
+        
+   function display_product(){
+          
          const xmlhttp = new XMLHttpRequest();
          
   xmlhttp.onload = function() {
@@ -319,18 +340,20 @@
     }
     <!-- console.log(r); -->
     
-    var display='<div class="col-md-6 col-lg-4 col-xl-4 mb-5 mb-md-5 mb-lg-5">                                                             <div class="card">                                    <!--  -->                                                        <div class="d-flex p-3">                                                           <p class="lead mb-0">Today Combo Offer</p>            </div>                                                                                                                  <!--       card  image       -->                                           <img src="assets/img/'+image+'"  class="card-img-top"/>                              <!--        card body        -->                                             <div class="card-body">                              <!--  -->                                         <div class="d-flex justify-content-between">        <p class="medium"><a href="#!"class="text-muted"> '+type+' </a></p><p class="medium text-danger"><s>  '+price+'   </s></p>                                                </div>                                                               <!--  -->                                                        <div class="d-flex justify-content-between mb-3">        <h3 class="mb-0">  '+name+' </h3>                    <h4 class="text-dark mb-0">  '+offer+'  </h4>                        </div>                                             <!--  -->                                          <div class="d-flex justify-content-between mb-4">    <p class="text-muted mt-2">Available: <span class="fw-bold">   '+available+'  </span></p>                                        <div class="ms-auto text-warning"> '+r+' </div>                                                </div>                                                    <!--  -->                                                <div class="d-flex justify-content-center mb-2">    <div type="button" class="btn btn-buy">Add to Cart</div>                                                </div>                                                 <!--  -->                                           </div>               <!-- card body end -->                                      </div>               <!-- card end  -->                               </div>   ';          <!-- col end -->
+    var display='<div class="col-md-6 col-lg-4 col-xl-4 mb-5 mb-md-5 mb-lg-5">                                                             <div class="card">                                    <!--  -->                                                        <div class="d-flex p-3">                                                           <p class="lead mb-0">Today Combo Offer</p>            </div>                                                                                                                  <!--       card  image       -->                                           <img src="./assets/img/'+image+'"  class="card-img-top"/>                              <!--        card body        -->                                             <div class="card-body">                              <!--  -->                                         <div class="d-flex justify-content-between">        <p class="medium"><a href="#!"class="text-muted"> '+type+' </a></p><p class="medium text-danger"><s>  '+price+'   </s></p>                                                </div>                                                               <!--  -->                                                        <div class="d-flex justify-content-between mb-3">        <h3 class="mb-0">  '+name+' </h3>                    <h4 class="text-dark mb-0">  '+offer+'  </h4>                        </div>                                             <!--  -->                                          <div class="d-flex justify-content-between mb-4">    <p class="text-muted mt-2">Available: <span class="fw-bold">   '+available+'  </span></p>                                        <div class="ms-auto text-warning"> '+r+' </div>                                                </div>                                                    <!--  -->                                                <div class="d-flex justify-content-center mb-2">    <div type="button" class="btn btn-buy">Add to Cart</div>                                                </div>                                                 <!--  -->                                           </div>               <!-- card body end -->                                      </div>               <!-- card end  -->                               </div>   ';          <!-- col end -->
     
                $(".row").append(display);
         
     }
-     $(".card").fadeOut(10).delay(30).fadeIn(1000,function(){$(".product-slider").slideDown(1000);}); 
+     $(".card").fadeOut(10).delay(30).fadeIn(1000).delay(50,function(){
+                 $(".product-slider").slideDown(3000);
+               }); 
   }
   
 
   xmlhttp.open("GET", "product.json",true);
   xmlhttp.send();
-        })
+     }
     
    </script>       
        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.slim.min.js"></script>-->
@@ -342,7 +365,7 @@
 
   <!-- Template Main JS File -->
 
-<script src="assets/js/main.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
 
 </html>
