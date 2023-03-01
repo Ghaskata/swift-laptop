@@ -31,7 +31,7 @@ $("h2").hide().slideDown(700);
  $(".col-md-4").hover( function(){
    console.log("hover");
      $(this).animate({
-       marginTop:"-=5%"
+       marginTop:"-=2%"
      },200);
    },
    function(){
@@ -39,7 +39,8 @@ $("h2").hide().slideDown(700);
        marginTop:"0%"
      },200);
    });
- 
+   
+   
 
  
  /*contact hover effect*/
