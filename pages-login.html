@@ -36,28 +36,23 @@
          background-size: cover;
         background-attachment:fixed;
     }
-   
+   *{
+font-size:1.5rem;
+}
 </style>
 </head>
 
 <body>
 
-  <main>
-         <a href="index.html"><ion-icon name="arrow-back-outline" class="rounded-circle mt-md-5 mt-xl-5 ml-md-5 ml-xl-5" style="font-size:5rem;background-color:#a4c1c1;padding:20px 20px;color:black;"></ion-icon></a>
+  <main style="height:100vh;">
+         <a href="index.html"><ion-icon name="arrow-back-outline" class="rounded-circle mt-md-3 mt-xl-3 ml-md-3 ml-xl-3"style="font-size:4rem;background-color:#a4c1c1;padding:15px 15px;color:black;"></ion-icon></a>
     <div class="container">
       <section class="min-vh-100 cen py-4">
         <div class="container">
           <div class="row justify-content-center">
-            
-            <div class="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
-
-
+            <div class="col-lg-5 col-md-5 d-flex flex-column align-items-center justify-content-center">
               <div class="card mb-5">
-
-
                 <div class="card-body">
-                  
-                  
                    <div class="d-flex justify-content-center py-4 mb-2 mt-lg-5 mt-2">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="./assets/img/logo.png" alt="">
@@ -65,34 +60,25 @@
                 </a>
               </div><!-- End Logo -->
 
-
-
-
                   <div class="pt-4">
                     <h3 class="card-title text-center pb-0 fs-4">Login to Your Account</h3>
                     <p class="text-center small">Enter your username & password to login</p>
                   </div>
-
                   <form class="row g-3">
-
                     <div class="col-12 mb-4">
                       <label for="yourUsername" class="form-label visually-hidden">Username</label>
                       <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
                         <input type="text" name="username" class="form-control" id="uname" placeholder="Username">
-                       
                       </div>
                     </div>
-
                     <div class="col-12 mb-4">
                       <label for="yourPassword" class="form-label visually-hidden">Password</label>
                       <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend"><ion-icon name="key"></ion-icon></span>
                         <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                        
                       </div>
                     </div>
-
                     <div class="col-12 row mb-4">
                       <div class="col d-flex justify-content-center">
                       <div class="form-check">
@@ -104,7 +90,6 @@
                         <a href="#">Forgot password?</a>
                     </div>
                     </div>
-                    
                     <div class="col-12 mb-3">
                       <button class="btn btn-primary w-100" type="submit" onclick="submitlog();">Login</button>
                     </div>
@@ -112,37 +97,22 @@
                       <p class="small mb-0">Don't have account? <a href="pages-register.html">Create an account</a></p>
                       <p class="small mb-5">or sign up with:</p>
                       <a href="#" class="mb-3"><i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i></a>
-
                       <a href="#" class="mb-3 ml-3 ml-md-4 ml-xl-5"><i class="fab fa-twitter fa-2x" style="color: #55acee;"></i></a>
-
                       <a href="https://instagram.com/archana__ghaskata?igshid=ZDdkNTZiNTM=" class="mb-3 ml-3 ml-md-4 ml-xl-5"><i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i></a>
-
                       <a href="https://www.linkedin.com/in/archana-g-1ba99125a" class="mb-3 ml-3 ml-md-4 ml-xl-5"><i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i></a>
                     </div>
                   </form>
-
-
                 </div>               
               </div>
               <div class="credits">
                 Designed by <a href="index.html">Archana Ghaskata</a>
               </div>
-             
             </div>
           </div>
         </div>
-        
-
-
-
-
       </section>
-
     </div>
   </main><!-- End #main -->
-
-
-
   <!----------script link--------->
   <script>
       function submitlog() {
