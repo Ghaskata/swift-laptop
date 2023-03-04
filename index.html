@@ -12,64 +12,21 @@
   <!-- Favicons -->
   <link href="./assets/img/favicon.png" rel="icon">
   
-  <!-- Vendor CSS Files -->
-  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     
   <!--bootstap link-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link    rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
   <!-- Template Main CSS File -->
   <link href="./assets/css/style.css" rel="stylesheet">
 <style>
-  .pro-card{
-    width: 320px;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-  }
- 
-  .pro-card-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    
-  }
-  .pro-card-body{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    position: absolute;
-    background: #1f3d4738;
-    backdrop-filter:blur(5px);
-    border-radius: 20px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-  }
- .pro-card:hover .pro-card-body{
-    right: 0;
-    
-  }
-  .pro-card-btn{
-    height: 45px;
-    width: 150px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-  }
+
   h2{
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 600;
   }
 </style>
 
@@ -95,15 +52,15 @@
 <nav class="header-nav ms-auto">
   <ul class="d-flex align-items-center">
     <li class="nav-item d-block">
-      <a class="nav-link nav-icon cart-bar-toggle mt-2" href="#">
+      <a class="nav-lin nav-icon cart-bar-toggle mt-2" href="#">
         <ion-icon name="cart" style="font-size:4rem;"></ion-icon>
-<!--            <span class="badge bg-success badge-number">3</span>-->
+            <span class="badge bg-success badge-number">0</span>
       </a>
     </li><!-- End cart Icon-->
 
     <li class="nav-item dropdown pe-3">
 
-      <a class="nav-link nav-profile d-flex align-items-center pe-0 mr-5" href="#" data-bs-toggle="dropdown">
+      <a class="nav-link nav-profile d-flex align-items-center pe-0 mr-5" >
         <img src="./assets/img/user.png" alt="Profile" class="rounded-circle">
       </a><!-- End Profile Iamge Icon -->
     </li><!-- End Profile Nav -->
@@ -138,7 +95,7 @@
       </li>
       <li>
         <a href="product.html">
-          <ion-icon name="ellipse-outline"style="font-size:1.5rem;" class="mr-2"></ion-icon></i><span>Computer</span>
+          <ion-icon name="ellipse-outline"style="font-size:1.5rem;" class="mr-2"></ion-icon><span>Computer</span>
         </a>
       </li>
       <li>
@@ -177,7 +134,7 @@
   <li class="nav-item">
     <a class="nav-link collapsed" href="pages-faq.html">
       <i><ion-icon name="help-circle-outline" style="font-size:2rem;"></ion-icon></i>
-      <span>Inquiry (F.A.Q.)</span>
+      <span>Enquiry (F.A.Q.)</span>
     </a>
   </li><!-- End F.A.Q Page Nav -->
 
@@ -207,7 +164,9 @@
 <ol class="carousel-indicators">
   <li data-target="#myCarousel" data-slide-to="0" class="active mr-4"></li>
   <li data-target="#myCarousel" data-slide-to="1"class="mr-4"></li>
-  <li data-target="#myCarousel" data-slide-to="2"class=""></li>
+  <li data-target="#myCarousel" data-slide-to="2"class="mr-4"></li>
+  <li data-target="#myCarousel" data-slide-to="3"class="mr-4"></li>
+   <li data-target="#myCarousel" data-slide-to="4"class=""></li>
 
   
 </ol>
@@ -217,13 +176,19 @@
   
   
   <div class="item active">
-    <img src="./assets/img/home.jpg" alt="Chicago" style="width: 100%;height:65vh;">
+    <img src="./assets/img/home.jpg" style="width: 100%;height:60vh;">
   </div>
   <div class="item">
-    <img src="./assets/img/banner1.jpg" alt="New York" style="width: 100%;height:65vh;">
+    <img src="./assets/img/banner1.jpg" style="width: 100%;height:60vh;">
   </div>
   <div class="item">
-    <img src="./assets/img/banner2.jpg" alt="New York" style="width: 100%;height:65vh;">
+    <img src="./assets/img/bann1.jpg" style="width: 100%;height:60vh;">
+  </div>
+  <div class="item">
+      <img src="assets/img/ban1.jpg" style="width:100%; height:60vh;">
+    </div>
+  <div class="item">
+    <img src="./assets/img/banner2.jpg" style="width: 100%;height:60vh;">
   </div>
 </div>
 
@@ -243,7 +208,7 @@
 <!--pro Product-->
 <section class="latest" id="latest">
   <div class="container mt-2 text-center">
-    <h2 class="latest-heading  mb-4">
+    <h2 class="latest-heading  mb-4" style="color:navy">
       Pro Series
     </h2>
     <h3 class="mb-4">Embrace the future of gaming with new Legion Pro Series laptops</h3>
@@ -321,7 +286,7 @@
   </section>
   
   <div class="container text-center mt-5">
-  <h2 class="mb-3">
+  <h2 class="mb-3" style="color:navy;">
     Style and savagery pushed to the limit.
   </h2>
   
@@ -464,9 +429,9 @@
           $('#p2').append(para2).hide().show(1500);
           
         });
-  
     }
-  
+    
+    
  });
 
 
@@ -477,7 +442,7 @@ function product_card(n){
   xmlhttp.onload = function() {
    <!--  console.log(this.responseText); -->
     const myObj = JSON.parse(this.responseText);
-    
+  var display='';
     for(i=0;i<n;i++){
    
     var product = myObj.products[i];
@@ -495,11 +460,11 @@ function product_card(n){
     }
     <!-- console.log(r); -->
     
-    var display='<div class="col-md-6 col-lg-4 col-xl-4 mb-5 mb-md-5 mb-lg-5">                                                             <div class="card">                                    <!--  -->                                                        <div class="d-flex p-3">                                                           <p class="lead mb-0">Today Combo Offer</p>            </div>                                                                                                                  <!--       card  image       -->                                           <img src="./assets/img/'+image+'"  class="card-img-top"/>                              <!--        card body        -->                                             <div class="card-body">                              <!--  -->                                         <div class="d-flex justify-content-between">        <p class="medium"><a href="#!"class="text-muted"> '+type+' </a></p><p class="medium text-danger"><s>  '+price+'   </s></p>                                                </div>                                                               <!--  -->                                                        <div class="d-flex justify-content-between mb-3">        <h3 class="mb-0">  '+name+' </h3>                    <h4 class="text-dark mb-0">  '+offer+'  </h4>                        </div>                                             <!--  -->                                          <div class="d-flex justify-content-between mb-4">    <p class="text-muted mt-2">Available: <span class="fw-bold">   '+available+'  </span></p>                                        <div class="ms-auto text-warning"> '+r+' </div>                                                </div>                                                    <!--  -->                                                <div class="d-flex justify-content-center mb-2">    <div type="button" class="btn btn-buy">Add to Cart</div>                                                </div>                                                 <!--  -->                                           </div>               <!-- card body end -->                                      </div>               <!-- card end  -->                               </div>   ';          <!-- col end -->
+    display+='<div class="col-md-6 col-lg-4 col-xl-4 mb-5 mb-md-5 mb-lg-5">                                                             <div class="card">                                    <!--  -->                                                        <div class="d-flex p-3">                                                           <p class="lead mb-0">Today Combo Offer</p>            </div>                                                                                                                  <!--       card  image       -->                                           <img src="./assets/img/'+image+'"  class="card-img-top"/>                              <!--        card body        -->                                             <div class="card-body">                              <!--  -->                                         <div class="d-flex justify-content-between">        <p class="medium"><a href="#!"class="text-muted"> '+type+' </a></p><p class="medium text-danger"><s>  '+price+'   </s></p>                                                </div>                                                               <!--  -->                                                        <div class="d-flex justify-content-between mb-3">        <h3 class="mb-0">  '+name+' </h3>                    <h4 class="text-dark mb-0">  '+offer+'  </h4>                        </div>                                             <!--  -->                                          <div class="d-flex justify-content-between mb-4">    <p class="text-muted mt-2">Available: <span class="fw-bold">   '+available+'  </span></p>                                        <div class="ms-auto text-warning"> '+r+' </div>                                                </div>                                                    <!--  -->                                                <div class="d-flex justify-content-center mb-2">    <div type="button" class="btn btn-buy">Add to Cart</div>                                                </div>                                                 <!--  -->                                           </div>               <!-- card body end -->                                      </div>               <!-- card end  -->                               </div>   ';          <!-- col end -->
     
-               $(".product").append(display);
         
     }
+    $(".product").append(display);
      $(".card").fadeOut(10).delay(30).fadeIn(500); 
   }
   

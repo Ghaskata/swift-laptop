@@ -12,20 +12,70 @@
   <!-- Favicons -->
   <link href="./assets/img/favicon.png" rel="icon">
   
-  <!-- Vendor CSS Files -->
-  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  
   <!--bootstap link-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link    rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
   <!-- Template Main CSS File -->
   <link href="./assets/css/style.css" rel="stylesheet">
 
 <style>
+body{
+  background: url(assets/img/b.jpg);
+        width: 100%;
+         background-size: cover;
+        background-attachment:fixed;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-input,
+.form-text-area {
+  background-color: white;
+  height: 50px;
+  padding-left: 16px;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 20px auto;
+}
+
+.form-text-area {
+  background-color: white;
+  height: auto;
+  padding-left: 16px;
+}
+
+ .form-control::placeholder {
+  font-weight: 500;
+  font-size: 1.3rem;
+  opacity: 1;
+}
+.form-control:focus {
+  border-color: #f33fb0;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.07), 0 0 16px blue;
+}
+.submit-button{
+  text-align: center;
+}
+.submit-button input {
+  border: none;
+  border-radius: 4px;
+  background-color: navy;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.submit-button input:hover {
+  background-color: #d30069;
+}
 
 </style>
 </head>
@@ -48,15 +98,15 @@
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
         <li class="nav-item d-block">
-          <a class="nav-link nav-icon cart-bar-toggle mt-2" href="#">
+          <a class="nav-lin nav-icon cart-bar-toggle mt-2" href="#">
             <ion-icon name="cart" style="font-size:4rem;"></ion-icon>
-<!--            <span class="badge bg-success badge-number">3</span>-->
+            <span class="badge bg-success badge-number">0</span>
           </a>
         </li><!-- End cart Icon-->
 
         <li class="nav-item dropdown pe-3">
 
-          <a class="nav-link nav-profile d-flex align-items-center pe-0 mr-5" href="#" data-bs-toggle="dropdown">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0 mr-5" >
             <img src="./assets/img/user.png" alt="Profile" class="rounded-circle">
           </a><!-- End Profile Iamge Icon -->
         </li><!-- End Profile Nav -->
@@ -130,7 +180,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-faq.html">
           <i><ion-icon name="help-circle-outline" style="font-size:2rem;"></ion-icon></i>
-          <span>Inquiry (F.A.Q.)</span>
+          <span>Enquiry (F.A.Q.)</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
@@ -156,58 +206,91 @@
   <main style="margin-top:60px">
          
   <div class="container-fluid p-0 m-0 inquiry-banner">
-    <h3 class="inquiry-banner-text text-center"> Got a Question ? Look No Further Call Us.</h3>
-    <img src="./assets/img/inquiry2.jpg" class="responsive" style="height:100vh;">
+   
+   <p class="inquiry-banner-text text-left ml-5"   style="font-size:2.5vw;"><span class="" style="font-weight:700;font-size:3.5vw;">Laptop FAQs</span> <br>Know your options before you buy,<br> or learn more about the capabilities of<br> your existing laptop with our <br>frequently asked questions.</p>
+    <img src="./assets/img/inquiry2.jpg" class="responsive" style="height:60vh;">
   </div>
-  <div class="text-center mb-5 mt-5">
-   <h2>Inquiry form</h2>
-   <p>Talk to Us now !<br>It's all about your queries.</p>
-   
-   
-
-
-            <!-- Delivery Options Start -->
-            <div id="BottomdelivaryOption" class="container-fluid back-white delivaryOption clsdelivaryop_posrel mt-5">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
-                        <div class="text-center">
-                            <img src="./assets/img/contact/USP-Free-Shipping.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Shipping Image" />
-                        </div>
-                        <div class="padding-bottom10 text-uppercase text-center text-bold">Free Shipping</div>
-                        <div class="delivary-para text-center">Available on all our products</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
-                        <div class="text-center">
-                            <img src="./assets/img/contact/safe-delivery.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Door step safe delivery" />
-                        </div>
-                        <div class="padding-bottom10 text-uppercase text-center text-bold">Safe Delivery</div>
-                        <div class="delivary-para text-center">Safe delivery at your doorstep</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right padding-top15 padding-bottom25 border-top border-bottom">
-                        <div class="text-center">
-                            <img src="./assets/img/contact/USP-COD.png" width="120" height="80" class="img-responsive current-location-grid lazy" />
-                        </div>
-                        <div class="padding-bottom10 text-uppercase text-center text-bold">Easy Installment</div>
-                        <div class="delivary-para text-center">Pay for your purchase in easy EMIs</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-top padding-top15 padding-bottom25 border-bottom">
-                        <div class="text-center">
-                            <img src="./assets/img/contact/USP-Enquiry.png" width="120" height="80" class="img-responsive current-location-grid lazy" alt="Enquiry" />
-                        </div>
-                        <div class="padding-bottom10 text-uppercase text-center text-bold">Enquiry</div>
-                        <div class="delivary-para text-center">Got a question? Look no further Call Us.</div>
-                    </div>
-                </div>
+ 
+  <div class="row mt-5" style="background-color:rgba(0,0,0,.5);border-radius:50px;margin:20px 20px;">
+    <div class="col" style="margin-right:0;"  >
+      <img src="assets/img/inq.gif" class="" width="100%" height="100%"/>
+    </div>
+    <div class="col" style="">
+      <h3 class="text-center mt-5" style="margin-bottom:5rem;color: navy;font-weight:500;font-size:6rem;">Inquiry Form</h3>
+    
+    <form action="#" class="contact-form" style="margin-right:20px;margin-left:20px;">
+      <div>
+        <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name"required >
+      </div>
+      <div>
+      <input type="password" class="form-control rounded border-white mb-3 form-input" id="password" placeholder="password"required>
+      </div>
+      <div>
+        <input type="email" class="form-control rounded border-white mb-3 form-input" id="email" placeholder="Email" required>
+      </div>
+      <div>
+        <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" id="mmessage" required></textarea>
+      </div>
+      <div class="submit-button mt-5" style="margin-bottom:50px;">
+        <input type="submit" value="Send" style="border-radius:50px; height:70px;" onclick="submitlog();">
+      </div>
+        
+        
+         
+      </form>
+      
+    </div>
+  </div>
+  
+ 
+ <div class="accordion-body mt-3" >
+   <h1 class="text-center">Frequently Asked Questions</h1><br>
+  <div class="accordion"style="border-radius:50px;">
+  </div>
+ </div>
+  
+         <!-- Delivery Options Start -->
+<div class="container-fluid  mt-5">
+    <div class="row" style="background-color:white;">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right pt-3 pb-4 border-top border-bottom">
+            <div class="cen">
+                <img src="./assets/img/contact/USP-Free-Shipping.png" width="120" height="80"/>
             </div>
-     
-
-
+            <div class="pb-2 text-uppercase text-center text-bold">Free Shipping</div>
+            <div class="text-center">Available on all our products</div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right pt-3 pb-4 border-top border-bottom">
+            <div class="cen">
+                <img src="./assets/img/contact/safe-delivery.png" width="120" height="80"/>
+            </div>
+            <div class="pb-2 text-uppercase text-center text-bold">Safe Delivery</div>
+            <div class="text-center">Safe delivery at your doorstep</div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right pt-3 pb-4 border-top border-bottom">
+            <div class="cen">
+                <img src="./assets/img/contact/USP-COD.png" width="120" height="80"/>
+            </div>
+            <div class="pb-2 text-uppercase text-center text-bold">Easy Installment</div>
+            <div class="text-center">Pay for your purchase in easy EMIs</div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 border-right pt-3 pb-4 border-top border-bottom">
+            <div class="cen">
+                <img src="./assets/img/contact/USP-Enquiry.png" width="120" height="80" />
+            </div>
+            <div class="pb-2 text-uppercase text-center text-bold">Enquiry</div>
+            <div class="text-center">Got a question? Look no further Call Us.</div>
+      
+        </div>
+    </div>
+</div>
+  
+  
   </main>
 
   
  <!-- ======= Footer ======= -->
   
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer" style="background-color:white;">
     <div class="copyright">
       &copy; Copyright <strong><span>Swift</span></strong>, All Rights Reserved.
     </div>
@@ -216,34 +299,96 @@
       Designed by <a href="index.html">Archana Ghaskata</a>
     </div>
   </footer><!-- End Footer -->
+   <!----------script link--------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $.getJSON("faq_json.json",function(data){
+      console.log(data);
+      var html='';
+      for(i=0;i<data.length;i++){
+      html+='<div class="list"><div class="label"><span style="font-weight:700;">Q </span>: '+data[i].que+'</div><div class="content">'+data[i].ans+'</div></div><hr>'
+      }
+      $('.accordion').html(html);
+     console.log(html);
+    });
 
+    
+    $(document).on('click', '.list', function() {
+      $(this).toggleClass('active');
+      if($(this).hasClass('active')){
+        $(this).children ('.content').hide().show(1000);
+      }
+});
 
-
-  
-
-    <script>
-
-    </script>
-  
-  
-  
-  
+    
+ });
+   
+      function submitlog() {
+      var z = document.getElementById('password').value;
+      var e = document.getElementById('name').value;
+      var x=document.getElementById('email').value;
+      var y=document.getElementById('message').value;
+      var at_position = x.indexOf('@');
+      var dot_position = x.lastIndexOf('.');
       
-      <!----------script link--------->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-       
- 
-       
+      if (e== '') {
+        swal({
+          title: 'Note',
+          text: 'user name Is Reqiure',
+          icon: 'warning',
+          button: 'OK',
+        });
+      } 
+      else if 
+        (z == '') {
+        swal({
+          title: 'Note',
+          text: 'password is Reqiure',
+          icon: 'warning',
+          button: 'OK',
+        });
+      }
+      else if (at_position < 1 || dot_position - at_position < 2) {
+        swal({
+          title: 'Correct Email',
+          text: 'Email is Reqiure',
+          icon: 'warning',
+          button: 'OK',
+        });
+      }
+      else if (y.length<20) {
+        swal({
+          title: 'Note',
+          text: 'please write message in at least 10 word',
+          icon: 'warning',
+          button: 'OK',
+        });
+      }
+      
+       else {
+        
+        swal({
+          title: 'Thank you',
+          text: 'login successfully',
+          icon: 'success',
+          button: 'ok',
+        }).then(function(){
+          window.location.href='../index.html';
+        });
+        
+      }
+    }
+  
+
+  </script>
        <!-- --------ion icon cdn----------- -->
        <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
   <!-- Template Main JS File -->
-
 <script src="./assets/js/main.js"></script>
 </body>
 

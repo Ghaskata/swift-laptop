@@ -11,11 +11,6 @@
 
   <!-- Favicons -->
   <link href="./assets/img/favicon.png" rel="icon">
-
-
-    <!-- Vendor CSS Files -->
-  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   
   <!--bootstap link-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,10 +19,9 @@
 
   <!-- Template Main CSS File -->
   <link href="./assets/css/style.css" rel="stylesheet">
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      
-   <link    rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
   <style>
     .bi-star-fill,.bi-star-half{
       font-size: 1.5rem;
@@ -53,15 +47,15 @@
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
         <li class="nav-item d-block">
-          <a class="nav-link nav-icon cart-bar-toggle mt-2" href="#">
+          <a class="nav-lin nav-icon cart-bar-toggle mt-2" href="#">
             <ion-icon name="cart" style="font-size:4rem;"></ion-icon>
-<!--            <span class="badge bg-success badge-number">3</span>-->
+            <span class="badge bg-success badge-number">0</span>
           </a>
         </li><!-- End cart Icon-->
 
         <li class="nav-item dropdown pe-3">
 
-          <a class="nav-link nav-profile d-flex align-items-center pe-0 mr-5" href="#" data-bs-toggle="dropdown">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0 mr-5" >
             <img src="./assets/img/user.png" alt="Profile" class="rounded-circle">
           </a><!-- End Profile Iamge Icon -->
         </li><!-- End Profile Nav -->
@@ -135,7 +129,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-faq.html">
           <i><ion-icon name="help-circle-outline" style="font-size:2rem;"></ion-icon></i>
-          <span>Inquiry (F.A.Q.)</span>
+          <span>Enquiry (F.A.Q.)</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
@@ -165,7 +159,9 @@
     <li data-target="#myCarousel" data-slide-to="0" class="active mr-4"></li>
     <li data-target="#myCarousel" data-slide-to="1"class="mr-4"></li>
     <li data-target="#myCarousel" data-slide-to="2"class="mr-4"></li>
-    <li data-target="#myCarousel" data-slide-to="3"class=""></li>
+    <li data-target="#myCarousel" data-slide-to="3"class="mr-4"></li>
+    <li data-target="#myCarousel" data-slide-to="4"class="mr-4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"class=""></li>
     
   </ol>
 
@@ -174,17 +170,22 @@
     
     
     <div class="item active">
-      <img src="./assets/img/mi1.jpg" style="width:100%; height:65vh;">
-    </div>
-
-    <div class="item">
-      <img src="./assets/img/banner2.jpg" style="width:100%;height:65vh;">
+      <img src="./assets/img/mi1.jpg" style="width:100%; height:60vh;">
     </div>
     <div class="item">
-      <img src="./assets/img/bann.jpg" style="width:100%;height:65vh;">
+      <img src="./assets/img/p.jpg" style="width:100%;height:60vh;">
     </div>
-     <div class="item">
-      <img src="./assets/img/gamming1.jpg" style="width:100%;height:65vh;">
+    <div class="item">
+      <img src="./assets/img/bann.jpg" style="width:100%;height:60vh;">
+    </div>
+    <div class="item">
+      <img src="./assets/img/ppp.jpg" style="width:100%;height:60vh;">
+    </div>
+    <div class="item">
+      <img src="./assets/img/gamming1.jpg" style="width:100%;height:60vh;">
+    </div>
+    <div class="item">
+      <img src="./assets/img/pppp.jpg" style="width:100%;height:60vh;">
     </div>
   </div>
 
@@ -202,7 +203,7 @@
 </div>
   <main class="main">
        <section class="text-center">
-               <h2 class="latest-heading mb-3"> Products</h2>
+               <h2 class="latest-heading mb-3" style="color:navy;font-weight:700;"> Products</h2>
   <div class="container py-5">
     <div class="row">
       
@@ -231,16 +232,17 @@
         $(document).ready(function(){
             
             $(".product-slider").slideUp();
-            display_product();
+            
            $("main").find ("*").hide();
             $("body").before('<center id="center"><h5 class="text-center" id="loading" style="margin-top:40vh;margin-bottom:40vh;">please wait...</h5></center>');
     
-       $("#loading").show(100).delay(1500).hide(300).delay(100,function(){
+       $("#loading").show(100).delay(800).hide(300).delay(100,function(){
               $("#center").remove();
                $("main").find ("*").show();
               display_product();
             });
-        })
+            
+        });
         
         
    function display_product(){
@@ -271,6 +273,7 @@
     var display='<div class="col-md-6 col-lg-4 col-xl-4 mb-5 mb-md-5 mb-lg-5">                                                             <div class="card">                                    <!--  -->                                                        <div class="d-flex p-3">                                                           <p class="lead mb-0">Today Combo Offer</p>            </div>                                                                                                                  <!--       card  image       -->                                           <img src="./assets/img/'+image+'"  class="card-img-top"/>                              <!--        card body        -->                                             <div class="card-body">                              <!--  -->                                         <div class="d-flex justify-content-between">        <p class="medium"><a href="#!"class="text-muted"> '+type+' </a></p><p class="medium text-danger"><s>  '+price+'   </s></p>                                                </div>                                                               <!--  -->                                                        <div class="d-flex justify-content-between mb-3">        <h3 class="mb-0">  '+name+' </h3>                    <h4 class="text-dark mb-0">  '+offer+'  </h4>                        </div>                                             <!--  -->                                          <div class="d-flex justify-content-between mb-4">    <p class="text-muted mt-2">Available: <span class="fw-bold">   '+available+'  </span></p>                                        <div class="ms-auto text-warning"> '+r+' </div>                                                </div>                                                    <!--  -->                                                <div class="d-flex justify-content-center mb-2">    <div type="button" class="btn btn-buy">Add to Cart</div>                                                </div>                                                 <!--  -->                                           </div>               <!-- card body end -->                                      </div>               <!-- card end  -->                               </div>   ';          <!-- col end -->
     
                $(".row").append(display);
+               console.log(i);
         
     }
      $(".card").fadeOut(10).delay(30).fadeIn(1000).delay(50,function(){

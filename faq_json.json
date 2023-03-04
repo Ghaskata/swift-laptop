@@ -1,0 +1,38 @@
+[
+  {
+    "que":" Do you collect and store my credit card information?",
+    "ans":"No. We do not collect and store your credit card information. During the purchasing process, you will enter your credit card information directly into the form posted by the credit card payment gateway. Hence, all your credit card information will be collected and secured by the credit card payment gateway directly, in the most secured way."
+  },
+  {
+    "que":"How do you store my contact information that I enter during the purchasing process?",
+    "ans":"All customers’ contact information, choice of products and delivery date entered at the Delivery Information Form during the purchasing process are stored in our secured merchant server database. All the printouts for record purpose are securely kept."
+  },
+  {
+    "que":"How do I Cancel an Order?",
+    "ans":"This can be done only if the order has not been shipped, has been under production, or special ordered from the supplier; otherwise, it's impossible to cancel the order.Please call us or send us an email at swiftcaremumbai@gmail.com to cancel your order."
+  },
+  {
+    "que":"Do you ship orders outside of India?",
+    "ans":"Yes, we do ship to addresses outside of India."
+  },
+  {
+    "que":"What are your shipping rates?",
+    "ans":"Delivery of all orders is currently free of charge."
+  },
+  {
+    "que":"How do I know that my order is confirmed?",
+    "ans":"Once your order is confirmed, you will see a confirmation page displaying a unique Order ID, a listing of the item(s) you have ordered and the shipping address. In addition, you will receive an email and message confirming your order details. You will also be notified when we dispatch the item(s) from our warehouse with the respective tracking details."
+  },
+  {
+    "que":"What recourse do I have in case I receive a defective/ damaged/ wrong item?",
+    "ans":"If you have received an item that is damaged/defective or wrong, just email us at the earliest at swiftcaremumbai@gmail.com . You must return the item unopened and in its original packaging, for a full refund. We will not entertain any complaint of any order after 3 (Three) days from the date of delivery of the order."
+  },
+  {
+    "que":"How many days it will take to refund?",
+    "ans":"It can take upto 7 working days to reflect in your account (original source) after refund."
+  },
+  {
+    "que":"I did not receive an email confirmation. Did my order go through?",
+    "ans":"This can be answered either by logging into your account from our website and viewing outstanding orders or you can call us during regular business hours and we can look it up for you."
+  }
+]
