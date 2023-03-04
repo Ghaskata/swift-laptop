@@ -4,31 +4,12 @@ $(document).ready(function() {
       $('body').toggleClass('toggle-sidebar');
     });
  
-  /**
-   * Back to top button
-   */
- /*  
-let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-*/
-$("h2").hide().slideDown(700);
+
+$("h2").hide().slideDown(1000);
  $("p").hide().show(1500);
  
- 
- 
- 
- 
- $(".col-md-4").hover( function(){
+
+ $(".col-md-4").hover(function(){
    console.log("hover");
      $(this).animate({
        marginTop:"-=2%"
@@ -40,8 +21,53 @@ $("h2").hide().slideDown(700);
      },200);
    });
    
+   /*navbar hover effect*/
+   $(".nav-link").hover(function(){
+     $(this).animate({
+       fontSize:"2rem"
+     },500);
+     $(this).find("ion-icon").animate({
+       fontSize:"3rem"
+     },500);
+   },
+     function(){
+     $(this).animate({
+       fontSize:"15px"
+     },500);
+     $(this).find("ion-icon").animate({
+       fontSize:"2rem"
+     },500);
+   });
    
+   
+   /*addrlistbox hover effect*/
+   $(".addrListBox").hover(function(){
+     console.log("&&&");
+     $(this).animate({
+       
+     },500);
+   },
+     function(){
+     $(this).animate({
+       fontSize:"15px"
+     },500);
+   });
+   
+/*add to cart*/
 
+$(document).on('click', '.btn-buy', function() {
+      swal({
+          title: 'This item add to your cart',
+          icon: 'success',
+          button: 'ok',
+        }).then(function(){
+          var a=$(".badge").text();
+          var b=parseInt(a, 10);
+          var c=b+1;
+          $(".badge").text(c);
+        });
+        
+    });
  
  /*contact hover effect*/
  $('.dvhead').hover(function () {
@@ -119,7 +145,9 @@ function submitForm() {
           text: 'Account has created',
           icon: 'success',
           button: 'OK',
+        }).then(function(){
+          window.location.replace('/index.html');
         });
-       window.location.replace('index.html');
+       
       }
     }
